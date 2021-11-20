@@ -14,58 +14,72 @@ version: 2.0
 jobs:
   MOX_01:
     <<: *commonSteps
+    parallelism: 14
     docker:
       - image: circleci/buildpack-deps:bionic-scm
   MOX_02:
+    parallelism: 14
     docker:
       - image: circleci/buildpack-deps:bionic-scm
     <<: *commonSteps
   MOX_03:
+    parallelism: 14
     docker:
       - image: circleci/buildpack-deps:bionic-scm
     steps:
       - checkout
   MOX_04:
+    parallelism: 14
     docker:
       - image: circleci/buildpack-deps:bionic-scm
     <<: *commonSteps
   MOX_05:
+    parallelism: 14
     docker:
       - image: circleci/buildpack-deps:bionic-scm
     <<: *commonSteps
   MOX_06:
+    parallelism: 14
     docker:
       - image: circleci/buildpack-deps:bionic-scm
     <<: *commonSteps
   MOX_07:
+    parallelism: 14
     docker:
       - image: circleci/buildpack-deps:bionic-scm
     <<: *commonSteps
   MOX_08:
+    parallelism: 14
     docker:
       - image: circleci/buildpack-deps:bionic-scm
     <<: *commonSteps
   MOX_09:
+    parallelism: 14
     docker:
       - image: circleci/buildpack-deps:bionic-scm
     <<: *commonSteps
   MOX_10:
+    parallelism: 14
     docker:
       - image: circleci/buildpack-deps:bionic-scm
     <<: *commonSteps
   MOX_11:
+    parallelism: 14
     docker:
       - image: circleci/buildpack-deps:bionic-scm
     <<: *commonSteps
   MOX_12:
+    parallelism: 14
     docker:
       - image: circleci/buildpack-deps:bionic-scm
     <<: *commonSteps
   MOX_13:
+    parallelism: 14
     docker:
       - image: circleci/buildpack-deps:bionic-scm
     <<: *commonSteps
   MOX_14:
+    parallelism: 14
     docker:
       - image: circleci/buildpack-deps:bionic-scm
     <<: *commonSteps
